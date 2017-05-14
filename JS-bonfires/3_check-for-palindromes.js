@@ -21,10 +21,5 @@ function reverseString(str) {
 
 function checkPalindrome(str) {
   str = removeNonAlphanumChars(str).toLowerCase();
-  if (str === reverseString(str)) {
-    return true;
-  }
-  return false;
+  return (str === reverseString(str));
 }
-
-checkPalindrome("eye");
