@@ -5,7 +5,7 @@
 */
 
 function removeFromArrayValuesInAdditionalArguments(arr, ...args) {
-  return arr.filter(function(element) {
+  return arr.filter((element) => {
     for (let i = 0; i < args.length; i++) {
       if (element === args[i]) {
         return false;
