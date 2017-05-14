@@ -6,6 +6,8 @@
 	For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
 */
 
-let factorialize = (num) => { (num === 0) ? 1 : num * factorialize(num - 1); }
+function factorialize(num) {
+	return (num === 0) ? 1 : num * factorialize(num - 1);
+}
 
 factorialize(5);
