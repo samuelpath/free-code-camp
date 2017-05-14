@@ -4,10 +4,6 @@
 	Your result must be a string.
 */
 
-function reverseString(str) {
-  var array = str.split('');
-  str = array.reverse().join('');
-  return str;
-}
+let reverseString = (str) => { str.split('').reverse().join(''); };
 
 reverseString("hello");
