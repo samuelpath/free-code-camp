@@ -1,6 +1,6 @@
 /*
-	Return the length of the longest word in the provided sentence.
-	Your response should be a number.
+  Return the length of the longest word in the provided sentence.
+  Your response should be a number.
 */
 
 function findLongestWordAmongTwo(word1, word2) {
