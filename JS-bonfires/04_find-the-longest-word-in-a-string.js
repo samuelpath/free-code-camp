@@ -4,10 +4,12 @@
 */
 
 function findLongestWordAmongTwo(word1, word2) {
-  return (word1.length > word2.length) ? word1 : word2;
+  return (word1.length > word2.length) 
+    ? word1
+    : word2;
 }
 
-function findLongestWordInString(sentence) {
+function getLengthOfLongestWordInString(sentence) {
   const wordsInSentence = sentence.split(' ');
   const longestWord = wordsInSentence.reduce(findLongestWordAmongTwo, '');
   return longestWord.length;
