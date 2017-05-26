@@ -5,7 +5,7 @@
   Input strings are guaranteed to be English words in all lowercase.
 */
 
-function translatePigLatin(strToTranslate) {
+function translateToPigLatin(strToTranslate) {
   let translatedStr = '';
   const intermediarySuffix = 'w';
   const finalSuffix = 'ay';
