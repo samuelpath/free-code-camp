@@ -44,13 +44,13 @@ function updateRecords(id, property, value) {
     if (!collectionItem.hasOwnProperty("tracks")) {
       collectionItem.tracks = [];
     }
-    if (value !== "") {
+    if (value) {
       collectionItem[property].push(value);
     } else {
       delete collectionItem.tracks;
     }
   } else {
-    if (value !== "") {
+    if (value) {
       collectionItem[property] = value;
     } else {
       delete collectionItem[property];
