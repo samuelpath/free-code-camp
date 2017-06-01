@@ -5,3 +5,13 @@
   but only 2 of them (aba and aba) don't have the same letter (in this case a) repeating.
 */
 
+function getAllPermutations(str) {
+  const nbPermutations = factorial(str.length);
+  const permutations = Array(nbPermutations);
+
+  str.split('').forEach(function(c) {
+    
+  });
+}
+
+const factorial = (n) => (n === 0) ? 1 : (n * factorial(n - 1));
