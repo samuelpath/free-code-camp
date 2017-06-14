@@ -11,3 +11,32 @@
   These methods must be the only available means of interacting with the object.
 */
 
+var Person = function(firstAndLast) {
+  let firstName = firstAndLast.split(' ')[0];
+  let lastName = firstAndLast.split(' ')[1];
+
+  this.getFirstName = function() {
+    return this.firstName;
+  }
+
+  this.getLastName = () => lastName;
+
+  this.getFullName = () => `{this.firstName} {this.lastName}`;
+
+  this.setFirstName = function(first) {
+    this.firstName = first;
+  };
+
+  this.setLastName = function(last) {
+    this.lastName = last;
+  };
+
+  this.setFullName = function(firstAndLast) {
+    
+  };
+
+  return firstAndLast;
+};
+
+var bob = new Person('Bob Ross');
+console.log(bob.getFullName());
